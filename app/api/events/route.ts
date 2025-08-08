@@ -1,9 +1,6 @@
 import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
-
-// GET /api/events
-export async function GET(request: NextRequest) {
-  const data = [
+const data = [
     {
       id: 1,
       title: "Mathematics 10A",
@@ -55,6 +52,10 @@ export async function GET(request: NextRequest) {
       date: "2025-08-08"
     }
   ];
+// GET /api/events
+export async function GET(request: NextRequest) {
+ 
+  console.log(data)
   return NextResponse.json(data);
 }
 
@@ -62,5 +63,6 @@ export async function POST(request: NextRequest) {
   const body = await request.json();
   // Optionally, validate body here
   console.log(body);
+  data.push(body);
   return NextResponse.json({ received: body });
 }

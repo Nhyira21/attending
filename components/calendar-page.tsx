@@ -52,7 +52,10 @@ export  function CalendarPage() {
   React.useEffect(() => {
     fetch('https://studlogging.netlify.app/api/events')
       .then(res => res.json())
-      .then((data: CalendarEvent[]) => setCalendarEvents(data));
+      .then((data: CalendarEvent[]) => {
+      console.log(data);
+      setCalendarEvents(data);
+      });
   }, []);
   const getDaysInMonth = (date: Date) => {
     const year = date.getFullYear()
@@ -206,6 +209,7 @@ export  function CalendarPage() {
                   <Label htmlFor="status">Status</Label>
                   <select
                     id="status"
+                    title = "status"
                     className="w-full border rounded px-2 py-1"
                     value={form.status}
                     onChange={e => setForm(f => ({ ...f, status: e.target.value }))}
