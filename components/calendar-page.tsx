@@ -161,15 +161,16 @@ export  function CalendarPage() {
                   <Label htmlFor="title">Course Name</Label>
                   <Input
                     id="title"
+                    name="title"
                     value={form.title}
                     onChange={e => setForm(f => ({ ...f, title: e.target.value }))}
                     placeholder="Enter Course name"
                   />
                 </div>
                 <div>
-                  <Label htmlFor="lecturer">Lecturer Name</Label>
                   <Input
                     id="lecturer"
+                    name="lecturer"
                     value={form.lecturer}
                     onChange={e => setForm(f => ({ ...f, lecturer: e.target.value }))}
                     placeholder="Enter lecturer name"
