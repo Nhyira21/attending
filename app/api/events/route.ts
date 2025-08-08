@@ -52,7 +52,7 @@ export async function GET(request: NextRequest) {
       students: 32,
       type: "class",
       status: "completed",
-      date: "2025-08-06"
+      date: "2025-08-08"
     }
   ];
   return NextResponse.json(data);
