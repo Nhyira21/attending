@@ -162,7 +162,7 @@ export  function CalendarPage() {
                   <Input
                     id="Course"
                     value={form.title}
-                    onChange={e => setForm(f => ({ ...f, lecturer: e.target.value }))}
+                    onChange={e => setForm(f => ({ ...f, title: e.target.value }))}
                     placeholder="Enter Course name"
                   />
                 </div>
