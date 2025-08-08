@@ -158,9 +158,9 @@ export  function CalendarPage() {
               </DialogHeader>
               <form className="space-y-4" onSubmit={handleSubmit}>
                 <div>
-                  <Label htmlFor="Course">Course Name</Label>
+                  <Label htmlFor="title">Course Name</Label>
                   <Input
-                    id="Course"
+                    id="title"
                     value={form.title}
                     onChange={e => setForm(f => ({ ...f, title: e.target.value }))}
                     placeholder="Enter Course name"
