@@ -17,7 +17,7 @@ const classesData = [
   {
     id: 1,
     name: "Homiletics",
-    grade: "Year 1",
+    grade: "100",
     students: 30,
     room: "201",
     schedule: "Mon, Wed, Fri - 9:00 AM",
@@ -30,7 +30,7 @@ const classesData = [
   {
     id: 2,
     name: "Hermeneutics",
-    grade: "Year 2",
+    grade: "200",
     students: 27,
     room: "202",
     schedule: "Tue, Thu - 11:00 AM",
@@ -43,7 +43,7 @@ const classesData = [
   {
     id: 3,
     name: "Christian Leadership",
-    grade: "Year 1",
+    grade: "100",
     students: 32,
     room: "204",
     schedule: "Mon, Wed, Fri - 1:00 PM",
@@ -56,7 +56,7 @@ const classesData = [
   {
     id: 4,
     name: "Systematic Theology",
-    grade: "Year 2",
+    grade: "200",
     students: 29,
     room: "205",
     schedule: "Tue, Thu - 2:00 PM",
@@ -69,7 +69,7 @@ const classesData = [
   {
     id: 5,
     name: "Ministerial Ethics",
-    grade: "Year 3",
+    grade: "300",
     students: 25,
     room: "206",
     schedule: "Mon, Wed - 10:30 AM",
@@ -82,7 +82,7 @@ const classesData = [
   {
     id: 6,
     name: "Apostolic Mandate",
-    grade: "Year 3",
+    grade: "300",
     students: 28,
     room: "207",
     schedule: "Tue, Thu - 3:30 PM",
@@ -95,7 +95,7 @@ const classesData = [
   {
     id: 7,
     name: "Pastoral Care and Counselling",
-    grade: "Year 4",
+    grade: "400",
     students: 31,
     room: "208",
     schedule: "Mon, Fri - 12:00 PM",
