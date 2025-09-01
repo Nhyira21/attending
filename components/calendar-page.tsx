@@ -23,7 +23,8 @@ import { Label } from "@/components/ui/label"
 // (or whatever route this file is mapped to in your Next.js app).
 
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const currentDate = new Date(2024, 10, 11) // November 11, 2024
+const currentDate = new Date(2025, 8, 9); // September 9, 2025
+
 interface CalendarEvent {
   id: string;
   title: string;
@@ -344,10 +345,19 @@ export  function CalendarPage() {
                     </div>
                     {daysOfWeek.slice(1, 6).map((day, dayIndex) => {
                       const currentDay = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate() - selectedDate.getDay() + dayIndex + 1)
+                      const parseHour = (timeStr: string) => {
+                        const [hourMin, period] = timeStr.split(' ')
+                        let [hour] = hourMin.split(':').map(Number)
+                        if (period === 'PM' && hour !== 12) hour += 12
+                        if (period === 'AM' && hour === 12) hour = 0
+                        return hour
+                      }
+                      
                       const events = getEventsForDate(currentDay).filter(event => {
-                        const eventHour = parseInt(event.time.split(':')[0])
+                        const eventHour = parseHour(event.time.split(' - ')[0])
                         return eventHour === hour
                       })
+
                       
                       return (
                         <div key={day} className="min-h-[60px] relative">
