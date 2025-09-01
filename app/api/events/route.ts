@@ -14,7 +14,7 @@ const data: CalendarEvent[] = [
   {
     id: "2",
     title: "Hermeneutics Year 2",
-    date: "2025-09-09",
+    date: "2025-09-01",
     time: "11:00 AM - 11:45 AM",
     room: "Room 202",
     students: 27,
@@ -24,7 +24,7 @@ const data: CalendarEvent[] = [
   {
     id: "3",
     title: "Christian Leadership Year 1",
-    date: "2025-09-09",
+    date: "2025-09-01",
     time: "2:00 PM - 2:45 PM",
     room: "Room 204",
     students: 32,
