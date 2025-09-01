@@ -51,7 +51,7 @@ export  function CalendarPage() {
   })
 
   React.useEffect(() => {
-    fetch('https://studlogging.netlify.app/api/events')
+    fetch('https://studentattending.netlify.app/api/events')
       .then(res => res.json())
       .then((data: CalendarEvent[]) => {
       console.log(data);
@@ -100,7 +100,7 @@ export  function CalendarPage() {
       setIsModalOpen(false);
       setForm({ title: '', lecturer: '', time: { start: '', end: '' }, room: '', date: '', status: 'scheduled' });
       // Refresh events
-      fetch('https://studlogging.netlify.app/api/events')
+      fetch('https://studentattending.netlify.app/api/events')
         .then(res => res.json())
         .then((data: CalendarEvent[]) => setCalendarEvents(data));
     } catch (err) {
