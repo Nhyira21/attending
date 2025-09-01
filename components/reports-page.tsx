@@ -29,20 +29,25 @@ const monthlyTrendData = [
 ]
 
 const classDistributionData = [
-  { name: 'Mathematics', value: 35, color: '#2563eb' },
-  { name: 'Physics', value: 28, color: '#7c3aed' },
-  { name: 'Chemistry', value: 25, color: '#059669' },
-  { name: 'Others', value: 12, color: '#dc2626' },
+  { name: 'Homiletics', value: 30, color: '#ef4444' },
+  { name: 'Hermeneutics', value: 27, color: '#3b82f6' },
+  { name: 'Christian Leadership', value: 32, color: '#f59e0b' },
+  { name: 'Systematic Theology', value: 29, color: '#10b981' },
+  { name: 'Ministerial Ethics', value: 25, color: '#8b5cf6' },
+  { name: 'Apostolic Mandate', value: 28, color: '#f97316' },
+  { name: 'Pastoral Care & Counselling', value: 31, color: '#14b8a6' },
 ]
 
 const absenteeismData = [
-  { class: 'Math 10A', rate: 7.1 },
-  { class: 'Physics 11B', rate: 12.0 },
-  { class: 'Chem 10B', rate: 16.7 },
-  { class: 'Math 9A', rate: 21.9 },
-  { class: 'Physics 10A', rate: 25.9 },
-  { class: 'Chem 9B', rate: 34.5 },
+  { class: 'Homiletics Y1', rate: 6.7 },
+  { class: 'Hermeneutics Y2', rate: 11.1 },
+  { class: 'Christian Leadership Y1', rate: 18.7 },
+  { class: 'Systematic Theology Y2', rate: 24.1 },
+  { class: 'Ministerial Ethics Y3', rate: 28.0 },
+  { class: 'Apostolic Mandate Y3', rate: 39.3 },
+  { class: 'Pastoral Care & Counselling Y4', rate: 38.7 },
 ]
+
 
 export function ReportsPage() {
   const [reportPeriod, setReportPeriod] = React.useState("this-month")
