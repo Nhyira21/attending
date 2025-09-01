@@ -371,7 +371,7 @@ export function SchoolAttendanceDashboard() {
                         Scan QR Code for Attendance
                       </DialogTitle>
                       <DialogDescription>
-                        Students should scan this QR code with their mobile devices to mark their attendance for Mathematics 10A.
+                        Students should scan this QR code with their mobile devices to mark their attendance for {nextClass.title.match(/\d+[A-Z]/) ? nextClass.title.match(/\d+[A-Z]/)[0] : "Class"}.
                       </DialogDescription>
                     </DialogHeader>
                     <div className="flex flex-col items-center space-y-4 py-4">
