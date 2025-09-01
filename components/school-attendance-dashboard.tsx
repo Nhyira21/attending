@@ -376,12 +376,12 @@ export function SchoolAttendanceDashboard() {
                     </DialogHeader>
                     <div className="flex flex-col items-center space-y-4 py-4">
                       <div className="bg-white p-6 rounded-lg border-2 border-gray-200">
-                        <QRCodeSVG
-                          value={qrCodeData}
-                          size={200}
-                          level="M"
-                          includeMargin={true}
-                        />
+                     <QRCodeSVG
+                      value={qrCodeData}  // plain URL
+                      size={200}
+                      level="M"
+                      includeMargin={true}
+                    />
                       </div>
                       <div className="text-center space-y-2">
                         <p className="text-sm font-medium text-gray-900">Mathematics 10A</p>
