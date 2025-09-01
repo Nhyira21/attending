@@ -338,7 +338,7 @@ export function SchoolAttendanceDashboard() {
   const handleOpenQRModal = () => {
     // Generate unique QR code data for this class session
     const sessionData = "https://docs.google.com/forms/d/e/1FAIpQLSdEzTyTJ1849Z4nBSTZCnF1YF4NeQpM1EsMhSCvdzN120UnVQ/viewform?usp=dialog"
-    setQrCodeData(JSON.stringify(sessionData))
+    setQrCodeData(sessionData)
     setIsQRModalOpen(true)
   }
 
