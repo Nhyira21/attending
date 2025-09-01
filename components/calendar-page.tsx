@@ -23,7 +23,7 @@ import { Label } from "@/components/ui/label"
 // (or whatever route this file is mapped to in your Next.js app).
 
 const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-const currentDate = new Date(2025, 8, 9); // September 9, 2025
+const currentDate = new Date(2025, 8, 1); // September 9, 2025
 
 interface CalendarEvent {
   id: string;
