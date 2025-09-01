@@ -54,12 +54,13 @@ const navigationItems = [
 ]
 
 const classPerformanceData = [
-  { position: 1, name: "Mathematics 10A", students: 28, present: 26, rate: 92.9, status: "excellent" },
-  { position: 2, name: "Physics 11B", students: 25, present: 22, rate: 88.0, status: "good" },
-  { position: 3, name: "Chemistry 10B", students: 30, present: 25, rate: 83.3, status: "good" },
-  { position: 4, name: "Mathematics 9A", students: 32, present: 25, rate: 78.1, status: "average" },
-  { position: 5, name: "Physics 10A", students: 27, present: 20, rate: 74.1, status: "average" },
-  { position: 6, name: "Chemistry 9B", students: 29, present: 19, rate: 65.5, status: "concern" },
+  { position: 1, name: "Homiletics", students: 30, present: 28, rate: 93.3, status: "excellent" },
+  { position: 2, name: "Hermeneutics", students: 27, present: 24, rate: 88.9, status: "good" },
+  { position: 3, name: "Christian Leadership", students: 32, present: 26, rate: 81.3, status: "good" },
+  { position: 4, name: "Systematic Theology", students: 29, present: 22, rate: 75.9, status: "average" },
+  { position: 5, name: "Ministerial Ethics", students: 25, present: 18, rate: 72.0, status: "average" },
+  { position: 6, name: "Apostolic Mandate", students: 28, present: 17, rate: 60.7, status: "concern" },
+  { position: 7, name: "Pastoral Care and Counselling", students: 31, present: 19, rate: 61.3, status: "concern" },
 ]
 
 const metricsData = [
