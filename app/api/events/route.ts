@@ -4,8 +4,8 @@ const data: CalendarEvent[] = [
   {
     id: "1",
     title: "Homiletics Year 1",
-    date: "2025-09-09",
-    time: "9:00 AM - 9:45 AM",
+    date: "2025-09-01",
+    time: "3:00 PM - 5:45 PM",
     room: "Room 201",
     students: 30,
     type: "class",
