@@ -384,7 +384,7 @@ export function SchoolAttendanceDashboard() {
                     />
                       </div>
                       <div className="text-center space-y-2">
-                        <p className="text-sm font-medium text-gray-900">Mathematics 10A</p>
+                        <p className="text-sm font-medium text-gray-900">{nextClass.title.match(/\d+[A-Z]/) ? nextClass.title.match(/\d+[A-Z]/)[0] : "Class"}</p>
 
                         <p className="text-xs text-gray-500">Valid until: {new Date(Date.now() + 15 * 60 * 1000).toLocaleTimeString()}</p>
                       </div>
