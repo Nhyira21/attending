@@ -29,7 +29,7 @@ const data = [
     students: 32,
     type: "class",
     status: "scheduled",
-    date: "2025-09-09"
+    date: "2025-09-01"
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ const data = [
     students: null,
     type: "meeting",
     status: "scheduled",
-    date: "2025-09-11"
+    date: "2025-09-01"
   },
   {
     id: 5,
